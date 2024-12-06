@@ -1,34 +1,72 @@
-/* Navbar.css */
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #333;
-  color: white;
   padding: 10px 20px;
+  background-color: #1e2c6f;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
 }
 
 .nav-links a {
   color: white;
-  margin-right: 15px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #f1f1f1;
 }
 
 .connect-btn {
-  background-color: #007bff;
-  color: white;
+  position: absolute;
+  right: 20px;
+  background-color: white;
+  color: #007bff;
   border: none;
-  padding: 10px 15px;
   border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .connect-btn:hover {
   background-color: #0056b3;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .connect-btn {
+    position: static;
+    margin-top: 15px;
+  }
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  
 }

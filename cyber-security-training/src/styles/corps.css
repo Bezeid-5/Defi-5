@@ -1,0 +1,70 @@
+.home-intro-container {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    position: relative;
+    overflow: hidden;
+}
+
+.home-intro-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    text-align: left;
+    color: white;
+    padding: 40px 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    opacity: 0; /* Par défaut, l'élément est invisible */
+    animation: fadeInLeft 1s ease-out forwards; /* Animation au chargement */
+}
+
+.home-intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.home-intro-content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.home-intro-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classe d'animation réinitialisée */
+.fade-in {
+    opacity: 1 !important;
+    animation: fadeInLeft 1s ease-out forwards !important;
+}

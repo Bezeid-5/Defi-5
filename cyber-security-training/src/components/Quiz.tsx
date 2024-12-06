@@ -39,7 +39,7 @@ const Quiz = () => {
     const handleQuit = () => {
         // Ici, vous pouvez ajouter une logique pour rediriger l'utilisateur ou fermer l'application.
         // Par exemple :
-        window.location.href = "/"; // Rediriger vers la page d'accueil
+        window.location.href = "/"; 
     };
 
     const currentQuestion = questions[currentQuestionIndex];
