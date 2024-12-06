@@ -1,0 +1,45 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2d3436;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.module {
+  margin-bottom: 10px;
+}
+
+.moduleTitle {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #636e72;
+  border-radius: 5px;
+}
+
+.moduleTitle:hover {
+  background-color: #b2bec3;
+}
+
+.subtitles {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: #2d3436;
+  border-radius: 5px;
+}
+
+.subtitle:hover {
+  background-color: #636e72;
+}
